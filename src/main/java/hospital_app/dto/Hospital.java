@@ -16,7 +16,7 @@ public class Hospital {
 	private String name;
 	private String website;
 
-	@OneToMany
+	@OneToMany(mappedBy = "hospital")
 	private List<Branch> branch;
 
 	public int getId() {

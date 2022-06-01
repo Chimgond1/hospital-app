@@ -5,7 +5,7 @@ import java.util.List;
 import hospital_app.dto.Address;
 import hospital_app.dto.Branch;
 
-public interface Address_Dto {
+public interface Address_Service {
 
 	Address saveAddress(Address address, int branch_id);
 

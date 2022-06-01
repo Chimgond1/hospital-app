@@ -19,7 +19,7 @@ public class Person {
 	private String email;
 	private int age;
 	private long phone;
-	@OneToMany
+	@OneToMany(mappedBy = "person")
 	private List<Encounter> encounter;
 
 	public int getId() {
