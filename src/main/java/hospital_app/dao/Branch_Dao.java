@@ -6,7 +6,7 @@ import hospital_app.dto.Branch;
 import hospital_app.dto.Encounter;
 import hospital_app.dto.Hospital;
 
-public interface Branch_Service {
+public interface Branch_Dao {
 
 	Branch saveBranch(Branch branch, int hospital_id);
 

@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
@@ -17,9 +18,10 @@ public class MedOrder {
 	private int id;
 	private Double total_amount;
 	private LocalDateTime oreder_date_time;
-	@OneToMany
+	@OneToMany(mappedBy = "medOrder")
 	private List<Item> items;
 	@ManyToOne
+	@JoinColumn
 	private Encounter encounter;
 
 	public int getId() {
